@@ -160,7 +160,8 @@ void main() {
   
 //   names.removeAt(2);
 //   print(names);
-  
+
+  //---List
   List<String>color_list=["Red","Green","White","Black"];
   
   print("First Color is: ${color_list.first}");
@@ -168,8 +169,37 @@ void main() {
   
   print("${color_list.contains("Green")}");
   
+  //  Set
   Set<int> num ={1};
   print("number set is empty : ${num.isEmpty}");
+
+  //Map
+  
+  Map<String, String>fruits={"red":"apple","green":"guava","orange":"orange"};
+  
+  print(fruits);
+  print(fruits.length);
+  print(fruits.isEmpty);
+  
+ //accessing keys
+  for(String i in fruits.keys)
+  {
+    print(i);
+  }
+  //accessing values
+  for(String i in fruits.values)
+  {
+    print(i);
+  }
+  //contains key
+  print("Is 2 a key? : ${fruits.containsKey(2)}");
+  
+  ///update method
+  
+  fruits.update("red",(value)=>"Pineapple");
+  
+  print(fruits);
+
   
   
 }
